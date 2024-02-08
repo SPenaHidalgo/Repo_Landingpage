@@ -1,0 +1,164 @@
+/* Estilos universales a la página */
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.body {
+ font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva,
+  Verdana, sans-serif;
+ background: white;
+}
+
+/* Estilos Barra de inicio */
+.barra-inicio {
+ display: flex;
+ position: absolute;
+ justify-content: space-between;
+ padding-top: 50px;
+ font-weight: bold;
+}
+
+li {
+ display: inline-block;
+ padding: 0px 50px;
+ font-size: 20px;
+ cursor: pointer;
+ transition: 1s;
+}
+
+/* Estilos Header */
+.header {
+ position: relative;
+ width: 100%;
+ height: 650px;
+ display: flex;
+ background-image: url("img/fondo.jpg");
+ background-image: linear-gradient(to top, rgba(207, 217, 223, 0.7) 0%, rgba(226, 235, 240, 0.7) 0%),
+  url(img/fondo.jpg);
+ justify-content: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+ overflow: hidden;
+}
+.header img {
+ width: 700px;
+ height: 700px;
+}
+
+.svg {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+}
+
+/* Estilos H1*/
+
+h1 {
+ text-align: center;
+ position: relative;
+ width: 80%;
+ margin: 50px auto;
+ font-size: 3em;
+}
+
+h1::before {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 2px;
+ position: absolute;
+ background-color: black;
+ top: 100%;
+ z-index: -1;
+}
+
+/* Estilos productos */
+.productos {
+ display: flex;
+ width: 70%;
+ margin: auto;
+ justify-content: space-around;
+ flex-wrap: wrap;
+}
+
+.productos img {
+ width: 250px;
+ position: relative;
+ height: 250px;
+ margin-bottom: 2em;
+ cursor: pointer;
+ transition: 1s;
+ border-radius: 20%;
+}
+
+.productos img:hover {
+ transform: scale(1.2);
+}
+
+.productos h2 {
+ text-align: left;
+ padding: 1em;
+ font-size: large;
+}
+
+.productos p {
+ text-align: center;
+ margin-left: 1.5em;
+}
+
+.productos p::first-letter {
+ font-weight: bold;
+ font-size: 2em;
+}
+
+/* Estilos sección de logos */
+.seccion-de-logos {
+ width: 5%;
+ text-align: center;
+ display: inline;
+}
+
+.seccion-de-logos h2 {
+ padding: 2em;
+}
+
+.seccion-de-logos img {
+ text-align: center;
+ border-radius: 20%;
+ height: 100px;
+ width: 100px;
+ margin-right: 100px;
+ margin-left: 100px;
+ cursor: pointer;
+ transition: 1s;
+}
+
+.seccion-de-logos img:hover {
+ transform: scale(1.2);
+}
+
+.suscripcion {
+ text-align: center;
+ padding: 4em;
+}
+
+.suscripcion h2 {
+ padding-bottom: 1em;
+}
+
+/* Estilos Footer */
+.footer-creditos {
+ height: 3em;
+ line-height: 3em;
+ padding-top: 2em;
+ padding-bottom: 4em;
+ background-color: #ecf4fb;
+ color: black;
+ text-align: center;
+ font-weight: 900;
+}
